@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import HeroSection from "@/components/HeroSection";
 import LoveLetterSection from "@/components/LoveLetterSection";
+import ImageGallerySection from "@/components/ImageGallerySection";
 import SurpriseSection from "@/components/SurpriseSection";
 import FloatingPetals from "@/components/FloatingPetals";
 import MusicPlayer from "@/components/MusicPlayer";
@@ -35,6 +36,9 @@ const Index = () => {
       <div ref={letterRef}>
         <LoveLetterSection />
       </div>
+      
+      {/* Image Gallery Section */}
+      <ImageGallerySection />
       
       {/* Surprise Section */}
       <SurpriseSection />

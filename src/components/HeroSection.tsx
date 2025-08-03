@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import romanticBackground from "@/assets/romantic-background.jpg";
 
 const HeroSection = ({ onReadLetter, onPlayMusic }: { 
   onReadLetter: () => void; 
@@ -29,10 +28,14 @@ const HeroSection = ({ onReadLetter, onPlayMusic }: {
   return (
     <section 
       className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${romanticBackground})` }}
+      style={{ 
+        backgroundImage: `url(https://images.unsplash.com/photo-1470813740244-df37b8c1eecb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-background/40" />
+      {/* Romantic overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-background/10 to-primary/30" />
       
       {/* Floating Hearts */}
       <div className="absolute inset-0 pointer-events-none">
